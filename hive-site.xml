@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://hive-metastore-db/hive?createDatabaseIfNotExist=true</value>
+    <description/>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+    <description/>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>metacat_user</value>
+    <description/>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>metacat_user_password</value>
+    <description/>
+  </property>
+  <property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>file:///tmp/warehouse</value>
+    <description/>
+  </property>
+</configuration>
