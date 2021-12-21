@@ -1,4 +1,4 @@
-FROM sequenceiq/hadoop-docker:2.7.1
+FROM harisekhon/hadoop:2.7
 MAINTAINER dbwatson@vectorspace.org
 
 ENV HIVE_HOME /usr/local/hive
@@ -16,6 +16,8 @@ RUN set -x \
 	&& rm hive.tar.gz* \
     && curl -fsSL "$MYSQL_JAR_URL" -o lib/mysql-connector-java.jar
 COPY ./hive-site.xml conf/hive-site.xml
+
+COPY ./core-site.xml /hadoop-2.7.4/etc/hadoop/core-site.xml
 
 EXPOSE 9083
 CMD ["hive", "--service", "metastore", "-p", "9083"]

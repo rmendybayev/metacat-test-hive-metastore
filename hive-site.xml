@@ -3,7 +3,7 @@
 <configuration>
   <property>
     <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:mysql://hive-metastore-db/hive?createDatabaseIfNotExist=true</value>
+    <value>jdbc:mysql://hive-metastore-db/hive?createDatabaseIfNotExist=true&amp;useSSL=false</value>
     <description/>
   </property>
   <property>
